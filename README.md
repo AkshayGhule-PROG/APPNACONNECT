@@ -72,16 +72,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
   .then(stream => { myVideo.srcObject = stream; })
   .catch(err => { console.error("Permission denied:", err); });
 
-📸 Screenshots / Demo
-
-Login / Register Page
-
-Landing Page / Dashboard
-
-Video Call Screen
-
-(Add images or GIFs here to showcase your work visually)
-
 📜 Development Timeline (Commits)
 
 Backend Setup: Socket.IO & signaling server
@@ -89,3 +79,4 @@ Backend Setup: Socket.IO & signaling server
 Frontend Authentication: Login, Register, Forgot Password
 
 Frontend Video Call: WebRTC integration with video/audio
+
