@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import {createServer} from 'node:http';
-import  {conncectToSocket} from './controllers/socketManager.js';
+import  {connectToSocket} from './controllers/socketManager.js';
 import userRoutes from './routes/users.routes.js'
 
 
@@ -12,7 +12,7 @@ import userRoutes from './routes/users.routes.js'
 
 const app = express();
 const server = createServer(app);
-const io = conncectToSocket(server);
+const io = connectToSocket(server);
 
 
 
